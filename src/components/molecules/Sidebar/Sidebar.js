@@ -2,28 +2,22 @@ import React, { useEffect, useState } from "react";
 import {
   CDBSidebar,
   CDBSidebarContent,
-  CDBSidebarHeader,
   CDBSidebarMenu,
   CDBSidebarMenuItem,
 } from "cdbreact";
-import { NavLink } from "react-router-dom";
 
-const Sidebar = () => {
+import { NavLink } from "react-router-dom";
+import "./styles.scss";
+
+export const Sidebar = () => {
   const [pathname, setpathname] = useState("/app/team");
 
   useEffect(() => {
-    console.log("window", window.location.pathname);
     setpathname(window.location.pathname);
   }, []);
   return (
-    <div
-      style={{ display: "flex", height: "100vh", overflow: "scroll initial" }}
-    >
+    <div className="sidebar-container">
       <CDBSidebar textColor="#fff" backgroundColor="#3B76EF">
-        <CDBSidebarHeader
-          prefix={<i className="fa fa-bars fa-large"></i>}
-        ></CDBSidebarHeader>
-
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
             <NavLink
@@ -63,5 +57,3 @@ const Sidebar = () => {
     </div>
   );
 };
-
-export default Sidebar;

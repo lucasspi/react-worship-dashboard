@@ -1,6 +1,6 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import TopNav from "./TopNav";
+import { Sidebar } from "./molecules/Sidebar/Sidebar";
+import { TopNav } from "./molecules/TopNav/TopNav";
 
 function AppLayout(props) {
   return (
