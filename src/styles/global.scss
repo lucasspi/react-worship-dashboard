@@ -29,3 +29,13 @@
 .fs-14 {
   font-size: 14px;
 }
+
+main {
+  padding: 12vh 3vh 4vh 3vh;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  main {
+    padding: 16vh 1vh 4vh 1vh;
+  }
+}

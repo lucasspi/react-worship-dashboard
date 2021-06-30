@@ -6,4 +6,36 @@
   font-size: 14px;
   border-radius: 8px;
   font-weight: 600;
+  margin: 0px 8px;
+}
+.btn-outline {
+  background: transparent;
+  color: #3b76ef;
+  border: 2px solid #3b76ef;
+  padding: 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin: 0px 8px;
+  transition: 0.2s;
+}
+.btn-outline:hover {
+  background: #3b76ef;
+  color: white;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .btn {
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0px 4px;
+  }
+  .btn-outline {
+    padding: 4px !important;
+    font-size: 8px !important;
+    font-weight: 400;
+    margin: 0px 4px;
+  }
 }

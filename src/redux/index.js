@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import { InfoReducer } from "./InfoReducer/reducer";
+import { teamReducer } from "./teamReducer/reducer";
 
 export default combineReducers({
-  infoReducer: InfoReducer,
+  teamReducer: teamReducer,
 });
