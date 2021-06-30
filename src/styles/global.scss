@@ -1,0 +1,31 @@
+// 01 - BACKGROUND
+// 02 - NAV
+// 03 - FONT-SIZE
+
+.background-primary {
+  background-color: $primary-color;
+}
+// 02 - NAV
+.nav-top {
+  background-color: $background-color-light;
+  -webkit-box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.35);
+  height: 100px;
+}
+
+.nav-active-item {
+  padding: 4px 0px;
+  margin: 4px 9px 4px 15px !important;
+}
+
+.nav-active-item.active {
+  border-right: 3px solid white;
+  background-color: #ffffff33;
+  color: white;
+  border-radius: 10px 0px 0px 10px;
+}
+
+// 03 - FONT-SIZE
+.fs-14 {
+  font-size: 14px;
+}
