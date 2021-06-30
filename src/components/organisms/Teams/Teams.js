@@ -1,6 +1,7 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
 import { Button } from "../../atoms";
 import { Table } from "../../molecules";
-import React from "react";
 
 export const Teams = () => {
   return (
@@ -9,16 +10,20 @@ export const Teams = () => {
       <div className="d-flex align-items-center justify-content-between">
         <p className="h2">Equipe</p>
         <div className="d-flex align-items-center">
-          <Button
-            title={"ADICIONAR MODALIDADE"}
-            onClick={() => {}}
-            type="outlined"
-          />
-          <Button
-            title={"ADICIONAR INTEGRANTE"}
-            onClick={() => {}}
-            type="outlined"
-          />
+          <NavLink to={`/app/team/modalidade`}>
+            <Button
+              title={"ADICIONAR MODALIDADE"}
+              onClick={() => {}}
+              type="outlined"
+            />
+          </NavLink>
+          <NavLink to={`/app/team/integrante`}>
+            <Button
+              title={"ADICIONAR INTEGRANTE"}
+              onClick={() => {}}
+              type="outlined"
+            />
+          </NavLink>
         </div>
       </div>
       {/* TABLE */}
