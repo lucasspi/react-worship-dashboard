@@ -17,4 +17,10 @@ export const teamData = [
     rate: 2,
     link: [],
   },
+  {
+    name: "João Vitor",
+    modalidade: ["Guitarra"],
+    rate: 1,
+    link: [],
+  },
 ];

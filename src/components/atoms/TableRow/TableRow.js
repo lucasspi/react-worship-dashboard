@@ -1,6 +1,6 @@
 import React from "react";
 import { Row } from "reactstrap";
-import { Colxx } from "../";
+import { Colxx, Star, Button } from "../";
 import "./styles.scss";
 
 export const TableRow = ({ data }) => {
@@ -21,18 +21,25 @@ export const TableRow = ({ data }) => {
               ))}
             </Colxx>
             <Colxx md="2">
-              <span>{item.rate}</span>
+              {Array.from({ length: 5 }, (v, i) => (
+                <Star
+                  starId={i + 1}
+                  key={`star_${i + 1}`}
+                  marked={item.rate >= i}
+                />
+              ))}
             </Colxx>
             <Colxx md="3">
               {item.link.map((mod, i) => (
                 <span>
                   {mod}
-                  {i + 1 === item.modalidade.length ? "" : ", "}
+                  {i + 1 === item.link.length ? "" : ", "}
                 </span>
               ))}
             </Colxx>
             <Colxx md="2">
-              {/* <span>{item.name}</span> */}
+              <Button title={"Editar"} type="unfilled" />
+              <Button title={"Excluir"} type="unfilled-error" />
             </Colxx>
           </Row>
         ))}

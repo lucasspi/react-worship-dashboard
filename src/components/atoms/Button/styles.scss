@@ -8,6 +8,7 @@
   font-weight: 600;
   margin: 0px 8px;
 }
+// ========================== BTN OUTLINED ========================== //
 .btn-outline {
   background: transparent;
   color: #3b76ef;
@@ -23,6 +24,9 @@
   background: #3b76ef;
   color: white;
 }
+// ========================== END BTN OUTLINED ========================== //
+
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
@@ -39,3 +43,38 @@
     margin: 0px 4px;
   }
 }
+
+
+// ========================== BTN UNFILLED ========================== //
+.btn-unfilled {
+  background: transparent;
+  color: #3b76ef;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin: 0px 4px;
+  transition: 0.2s;
+}
+.btn-unfilled:hover {
+  background: #3b76ef;
+  color: white;
+}
+
+.btn-unfilled-error {
+  background: transparent;
+  color: #df5b4a;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin: 0px 4px;
+  transition: 0.2s;
+}
+.btn-unfilled-error:hover {
+  background: #df5b4a;
+  color: white;
+}
+// ========================== END BTN UNFILLED ========================== //
