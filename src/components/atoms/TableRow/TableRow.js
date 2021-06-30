@@ -31,7 +31,7 @@ export const TableRow = ({ data }) => {
             </Colxx>
             <Colxx md="3">
               {item.link.map((mod, i) => (
-                <span>
+                <span key={i}>
                   {mod}
                   {i + 1 === item.link.length ? "" : ", "}
                 </span>
